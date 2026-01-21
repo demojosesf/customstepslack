@@ -10,5 +10,12 @@ public class Main {
         Listeners.register(app);
         // SocketModeApp expects an env variables: SLACK_APP_TOKEN
         new SocketModeApp(app).start();
+    };
+        public static void main(String[] args) throws Exception {
+        // App expects an env variables de: SLACK_BOT_TOKEN - Esto es una prueba
+        var app = new App();
+        Listeners.register(app);
+        // SocketModeApp expects an env variables: SLACK_APP_TOKEN
+        new SocketModeApp(app).start();
     }
 }
