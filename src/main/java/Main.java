@@ -8,7 +8,7 @@ public class Main {
         // App expects an env variable: SLACK_BOT_TOKEN
         var app = new App();
         Listeners.register(app);
-        // SocketModeApp expects an env variable: SLACK_APP_TOKEN
+        // SocketModeApp expects an env variables: SLACK_APP_TOKEN
         new SocketModeApp(app).start();
     }
 }
