@@ -5,7 +5,7 @@ import listeners.Listeners;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        // App expects an env variable: SLACK_BOT_TOKEN - Esto es una prueba
+        // App expects an env variables de: SLACK_BOT_TOKEN - Esto es una prueba
         var app = new App();
         Listeners.register(app);
         // SocketModeApp expects an env variables: SLACK_APP_TOKEN
